@@ -1,19 +1,23 @@
+import React from "react";
 // Code EyesOnMe Component Here
-import React from 'react';
 
 function EyesOnMe() {
     function handleFocus() {
-        console.log("Good!");
+        console.log("Good!");    
     }
 
-    function handleBlur() {
+    function handleBlur(){
         console.log("Hey! Eyes on me!");
     }
 
     return (
-        <button onFocus={handleFocus} onBlur={handleBlur}>
-            Focus on Me
-        </button>
+        <div>
+            <button
+                type="text"
+                onFocus={handleFocus} onBlur={handleBlur}
+            >Eyes on me
+            </button>
+        </div>
     );
 }
 
